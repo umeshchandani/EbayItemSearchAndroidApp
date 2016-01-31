@@ -1,0 +1,148 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#eaecee">
+
+   <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/shippingTypeRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/shippingType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shipping_type"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/shippingTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/handlingTimeRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/handlingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/handling_time"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/handlingTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/shippingLocationRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/shippingLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shipping_locations"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/shippingLocationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+        
+<RelativeLayout >
+
+            <TextView
+                android:id="@+id/expeditedShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expedited_shipping"
+                 android:paddingTop="20dp" 
+               
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/expeditedShippingText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                 android:layout_alignBottom="@+id/expeditedShipping"
+             />
+
+
+            <TextView
+                android:id="@+id/oneDayShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one_day_shipping"
+                 android:paddingTop="20dp" 
+                   android:layout_below="@+id/expeditedShipping"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/oneDayShippingText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                 android:layout_alignBottom="@+id/oneDayShipping"
+                 />
+
+            <TextView
+                android:id="@+id/returnsAccepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/returns_accepted"
+                 android:paddingTop="20dp" 
+                  android:layout_below="@+id/oneDayShipping"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/returnsAcceptedText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                 android:layout_alignBottom="@+id/returnsAccepted"
+                />
+
+
+        
+            </RelativeLayout>
+    </TableLayout>
+
+</LinearLayout>
